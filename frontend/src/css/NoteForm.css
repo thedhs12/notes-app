@@ -1,0 +1,98 @@
+
+.note-form-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.note-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+
+.note-form-container .error {
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+.note-form-container input,
+.note-form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note-form-container input:focus,
+.note-form-container textarea:focus {
+  border-color: #764ba2;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.3);
+}
+
+
+.note-form-container textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+
+.note-form-container button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.note-form-container button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.note-form-container button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed
+}
+
+
+@media (max-width: 600px) {
+  .note-form-container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .note-form-container h2 {
+    font-size: 20px;
+  }
+
+  .note-form-container input,
+  .note-form-container textarea {
+    font-size: 14px;
+  }
+
+  .note-form-container button {
+    font-size: 15px;
+  }
+}
